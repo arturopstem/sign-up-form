@@ -8,5 +8,90 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section class="left-section">
+        <div class="logo">
+          <img src="./assets/odin-lined.png" alt="" /><span>ODIN</span>
+        </div>
+        <p class="bg-img-credit">
+          Photo by
+          <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+          <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
+        </p>
+      </section>
+      <section class="right-section">
+        <header class="form-header">
+          <div class="text">
+            <p>
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+              Sign up
+              <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+          </div>
+        </header>
+        <form action="#" method="post" id="form">
+          <div class="form-content">
+            <p>Let's do this!</p>
+            <div class="input-controls">
+              <div>
+                <label for="first-name">FIRST NAME</label
+                ><input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="last-name">LAST NAME</label
+                ><input type="text" name="last-name" id="last-name" />
+              </div>
+              <div>
+                <label for="email">EMAIL</label
+                ><input
+                  type="email"
+                  name="email"
+                  id="email"
+                  pattern="^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$"
+                  required
+                />
+              </div>
+              <div>
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="tel" name="phone-number" id="phone-number" />
+              </div>
+              <div>
+                <label for="password">PASSWORD</label
+                ><input
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                />
+                <div class="feedback-msg"></div>
+              </div>
+              <div>
+                <label for="confirm-password">CONFIRM PASSWORD</label
+                ><input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-password"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+        <footer class="form-footer">
+          <div class="form-footer-content">
+            <button type="submit" form="form">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </body>
 </html>

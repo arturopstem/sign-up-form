@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url(./assets/Norse-Bold.otf);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100svh;
+}
+
+main {
+  height: 100%;
+  display: flex;
+}
+
+.left-section {
+  flex: 2 0 0;
+  background-image: url(./assets/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-section * {
+  color: inherit;
+}
+
+.logo {
+  font-family: "Norse Bold";
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 25%;
+}
+
+.logo img {
+  height: 150px;
+}
+
+.logo span {
+  font-size: 100px;
+}
+
+.bg-img-credit {
+  align-self: center;
+  margin-bottom: 5%;
+}
+
+.right-section {
+  font-family: Arial, Helvetica, sans-serif;
+  flex: 3 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-header {
+  background-color: rgba(211, 211, 211, 0.2);
+  flex: 5 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-size: 18px;
+  font-weight: bold;
+}
+.form-header .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 2.5rem 3.5rem;
+}
+
+.form-header p {
+  max-width: 600px;
+}
+
+#form {
+  flex: 4 0 0;
+  box-shadow: 0px 5px 5px rgba(211, 211, 211, 0.5);
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  padding: 2rem 2.5rem 0;
+}
+
+.form-content p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.input-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 3.5rem;
+}
+
+.input-controls > div {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-controls label {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.input-controls input {
+  border: 1px solid #e5e7eb;
+  height: 1.5rem;
+  border-radius: 4px;
+  padding: 1ch;
+}
+
+input:focus {
+  outline: 1px solid blue;
+  box-shadow: 0px 5px 5px rgba(211, 211, 211, 0.5);
+}
+
+.feedback-msg {
+  position: relative;
+  height: 0px;
+}
+
+.feedback-msg::after {
+  visibility: hidden;
+  content: "*Passwords do not match";
+  color: indianred;
+  font-size: 12px;
+}
+
+#password.error + .feedback-msg::after {
+  visibility: visible;
+}
+
+.error {
+  outline: 1px solid indianred;
+}
+
+.form-footer {
+  background-color: rgba(211, 211, 211, 0.05);
+  flex: 4 0 0;
+}
+
+.form-footer-content {
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+
+.form-footer button {
+  background-color: #596d48;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem 3.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.form-footer a {
+  color: #596d48;
+  font-weight: bold;
+  text-decoration: none;
+}
