@@ -147,8 +147,12 @@ input:focus {
   visibility: visible;
 }
 
-.error {
+[type="password"].error {
   outline: 1px solid indianred;
+}
+
+[type="password"].success {
+  outline: 1px solid green;
 }
 
 .form-footer {
